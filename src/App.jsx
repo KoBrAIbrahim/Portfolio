@@ -76,7 +76,7 @@ export default function App() {
         <div className="container">
           <div className="section-header">
             <h2>Pharmacy & Warehouse Web App</h2>
-            <span className="subtitle">React + Vite — detailed overview</span>
+            <span className="subtitle">Inventory & batch tracking</span>
           </div>
 
           <div className="card" style={{ marginBottom: 14 }}>
@@ -120,7 +120,7 @@ export default function App() {
         <div className="container">
           <div className="section-header">
             <h2>Café & Billiards Management Suite</h2>
-            <span className="subtitle">React + Vite — detailed overview</span>
+            <span className="subtitle">Orders, tables & tournaments</span>
           </div>
 
           <div className="card" style={{ marginBottom: 14 }}>
@@ -163,7 +163,7 @@ export default function App() {
   <div className="container">
     <div className="section-header">
       <h2>Driving School Management Platform</h2>
-      <span className="subtitle">React + Vite — detailed overview</span>
+  <span className="subtitle">Bookings & smart scheduling</span>
     </div>
 
     <div className="card" style={{ marginBottom: 14 }}>
