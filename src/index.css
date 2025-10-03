@@ -31,6 +31,11 @@ a{ color: inherit; text-decoration: none; }
   margin-inline: auto;
 }
 
+/* Slight padding for containers on very small devices */
+@media (max-width: 420px){
+  .container{ width: calc(100% - 28px); }
+}
+
 .nav{
   position: sticky; top: 0; z-index: 40;
   backdrop-filter: blur(14px);
@@ -154,3 +159,63 @@ a{ color: inherit; text-decoration: none; }
 @media (max-width: 640px){
   .features{ grid-template-columns: 1fr; }
 }
+
+@media (max-width: 420px){
+  .gallery{ grid-template-columns: 1fr; grid-auto-rows: auto; }
+  .tile{ aspect-ratio: auto; height: 220px; }
+}
+
+/* Responsive improvements for small and medium screens */
+@media (max-width: 900px) {
+  .nav-inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    padding: 10px 0;
+  }
+
+  .nav-links{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .nav-links a{
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .hero{
+    padding: 36px 0 28px;
+    text-align: left;
+  }
+
+  .hero p{ max-width: 100%; }
+
+  .section-header{ flex-direction: column; align-items: flex-start; }
+
+  .section-header .subtitle{ margin-top: 6px; }
+
+  .gallery{ grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+
+  .tile{ border-radius: 12px; }
+}
+
+@media (max-width: 480px) {
+  .brand-text{ font-size: 14px; }
+
+  .hero h1{ font-size: clamp(22px, 6vw, 34px); }
+
+  .gallery{ gap: 12px; }
+
+  .tile{ aspect-ratio: 3/4; }
+
+  .badge{ padding:6px 10px; font-size:11px; }
+
+  .nav-links{ gap:6px; }
+
+  .footer{ padding: 22px 0 28px; }
+}
+
+/* Improve tap targets for links */
+a, .nav-links a, .badge { touch-action: manipulation; }
